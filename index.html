@@ -1,0 +1,74 @@
+<!-- twitter / ig @cicciosgamino
+
+   _______           _                                  _
+  / ____(_)_________(_)___  _________ _____ _____ ___  (_)___  ____
+ / /   / / ___/ ___/ / __ \/ ___/ __ `/ __ `/ __ `__ \/ / __ \/ __ \
+/ /___/ / /__/ /__/ / /_/ (__  ) /_/ / /_/ / / / / / / / / / / /_/ /
+\____/_/\___/\___/_/\____/____/\__, /\__,_/_/ /_/ /_/_/_/ /_/\____/
+                              /____/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="@cicciosgamino"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>🍣</title>
+
+  <style>
+
+    html {
+      margin: 0;
+      /* base rem unit (10px) */
+      font-size: 62.5%;
+    }
+
+    body  {
+      margin: 0;
+      padding: 2rem;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    progress-ring {
+      /* background color of the circle */
+      --bk-color: yellow;
+      /* progress indicator color on opacity */
+      --progress-stroke-color: purple;
+      --progress-opacity: .9;
+      /* trace of the indicator path and opacity */
+      --footprint-stroke-color: grey;
+      --footprint-opacity: .2;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+  
+  <h1>🍣</h1>
+
+  <progress-ring stroke="40" radius="180" progress="0"></progress-ring>
+
+  <noscript>
+    Please enable JavaScript to view this website.
+  </noscript>
+
+  <!-- Import Js Module -->
+  <script type="module" src="progress-ring.js"></script>
+
+  <script>
+    const p = document.querySelector('progress-ring')
+    let count = 0
+    setInterval(() => {
+      p.setAttribute('progress', `${(count+=1) % 100}`)
+    }, 500)
+  </script>
+
+</body>
+</html>
