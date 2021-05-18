@@ -1,0 +1,159 @@
+<!-- twitter / ig @cicciosgamino
+
+   _______           _                                  _
+  / ____(_)_________(_)___  _________ _____ _____ ___  (_)___  ____
+ / /   / / ___/ ___/ / __ \/ ___/ __ `/ __ `/ __ `__ \/ / __ \/ __ \
+/ /___/ / /__/ /__/ / /_/ (__  ) /_/ / /_/ / / / / / / / / / / /_/ /
+\____/_/\___/\___/_/\____/____/\__, /\__,_/_/ /_/ /_/_/_/ /_/\____/
+                              /____/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="@cicciosgamino"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Font Jua 400 -->
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <!-- Font Mitr 200 -->
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap" rel="stylesheet">
+
+  <title>🍣</title>
+
+  <style>
+
+    html {
+      margin: 0;
+      /* base rem unit (10px) */
+      font-size: 62.5%;
+    }
+
+    body  {
+      margin: 0;
+      padding: 2rem;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    progress-ring {
+      /*
+      --bk-color: transparent;
+      --progress-stroke-color: purple;
+      --progress-stroke-gradient-color: #00bc9b;
+      --progress-opacity: .9;
+      --footprint-stroke-color: grey;
+      --footprint-opacity: .2;
+      --progress-font-family: 'Roboto', sans-serif;
+      --progress-font-size: 2rem;
+      --progress-font-color: salmon;
+      --title-font-family: 'Roboto', sans-serif;
+      --title-font-size: 1.3rem;
+      --title-font-color: blue; */
+
+      /* example one
+      --progress-from-bottom: 10%;
+      --progress-from-left: 50%;
+      --bk-color: #34495e;
+      --progress-stroke-color: #3598dc;
+      --progress-opacity: 1;
+      --progress-font-family: 'Roboto', sans-serif;
+      --progress-font-size: 3rem;
+      --progress-font-color: whitesmoke; */
+
+      /* example two
+      --progress-from-bottom: 10%;
+      --progress-from-left: 50%;
+      --bk-color: transparent;
+      --footprint-stroke-color: grey;
+      --footprint-opacity: .1;
+      --progress-stroke-color: #e9008d;
+      --progress-stroke-gradient-color: #dc0030ff;
+      --progress-stroke-linecap: round;
+      --progress-font-family: 'Jua', sans-serif;
+      --progress-font-size: 3rem;
+      --progress-font-color: #dc0030ff;
+      --progress-font-weight: 600; */
+
+      /* example three
+        --progress-from-bottom: 5%;
+        --progress-from-left: 50%;
+
+        --bk-color: transparent;
+
+        --progress-stroke-color: purple;
+        --progress-stroke-gradient-color: #00bc9b;
+        --progress-stroke-linecap: round;
+        --progress-opacity: .9;
+
+        --footprint-stroke-color: grey;
+        --footprint-opacity: .2;
+
+        --progress-font-family: 'Mitr', sans-serif;
+        --progress-font-size: 3rem;
+        --progress-font-weight: 700;
+        --progress-font-color: #232323; */
+
+        /* example four */
+        --progress-from-bottom: 10%;
+        --progress-from-left: 50%;
+        --title-from-top: 10%;
+        --title-from-left: 50%;
+
+        --bk-color: transparent;
+
+        --progress-stroke-color: OrangeRed ;
+        --progress-stroke-gradient-color: salmon;
+        --progress-stroke-linecap: round;
+        --progress-opacity: .9;
+
+        --footprint-stroke-color: grey;
+        --footprint-opacity: .2;
+
+        --progress-font-family: 'Roboto', sans-serif;
+        --progress-font-size: 2rem;
+        --progress-font-weight: 700;
+        --progress-font-color: salmon;
+
+        --title-font-size: 4rem;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- Example one -->
+  <!-- <progress-ring stroke="20" radius="80" progress="0"></progress-ring> -->
+
+  <!-- Example two -->
+  <!-- <progress-ring stroke="13" radius="80" progress="10" ></progress-ring> -->
+
+  <!-- Example three -->
+  <!-- <progress-ring stroke="13" radius="80" progress="0"></progress-ring> -->
+
+  <!-- Example four -->
+  <progress-ring title="🍣" stroke="10" radius="80" progress="0"></progress-ring>
+
+  <noscript>
+    Please enable JavaScript to view this website.
+  </noscript>
+
+  <!-- Import Js Module -->
+  <script type="module" src="../progress-ring.js"></script>
+
+  <script>
+    const p = document.querySelector('progress-ring')
+    let count = 0
+    setInterval(() => {
+      p.setAttribute('progress', `${(count+=1) % 100}`)
+    }, 100)
+  </script>
+
+</body>
+</html>

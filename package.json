@@ -1,9 +1,12 @@
 {
-  "name": "progress-ring",
+  "name": "@cicciosgamino/progress-ring",
   "version": "1.0.0",
   "description": "Simple progress ring customElement dev with Lit!",
   "main": "progress-ring.js",
+  "type": "module",
+  "module": "progress-ring.js",
   "scripts": {
+    "serve": "web-dev-server --node-resolve --app-index /examples/index.html --watch --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +27,14 @@
   "bugs": {
     "url": "https://github.com/CICCIOSGAMINO/progress-ring/issues"
   },
-  "homepage": "https://github.com/CICCIOSGAMINO/progress-ring#readme"
+  "homepage": "https://github.com/CICCIOSGAMINO/progress-ring#readme",
+  "dependencies": {
+    "lit": "*"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17"
+  },
+  "directories": {
+    "example": "examples"
+  }
 }
