@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 18-05-2021
+### Added
+  - Add default transparent to the circle background
+
+### Changed
+  - Minor into README.md
+
 ## [1.0.0] - 18-05-2021
 ### Added
-- Init the Element  [@cicciosgamino](https://github.com/CICCIOSGAMINO).
+  - Init the Element  [@cicciosgamino](https://github.com/CICCIOSGAMINO).

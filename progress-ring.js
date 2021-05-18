@@ -47,7 +47,7 @@ class ProgressRing extends LitElement {
       }
 
       .progress-ring__circle {
-        fill: var(--bk-color);
+        fill: var(--bk-color, transparent);
         stroke-linecap: var(--progress-stroke-linecap, butt);
         /* stroke: var(--progress-stroke-color); */
         opacity: var(--progress-opacity, .9);

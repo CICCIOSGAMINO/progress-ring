@@ -1,6 +1,5 @@
 ![GitHub issues](https://img.shields.io/github/issues/CICCIOSGAMINO/progress-ring)
 [![npm version](https://badgen.net/npm/v/@cicciosgamino/progress-ring)](https://www.npmjs.com/package/@cicciosgamino/progress-ring)
-![npm](https://img.shields.io/npm/dw/cicciosgamino/progress-ring)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/cicciosgamino/progress-ring)
 
 # 🪐 \<progress-ring\>
@@ -12,14 +11,16 @@ Simple customizable progress ring 🪐!
 ![Example One](https://raw.githubusercontent.com/CICCIOSGAMINO/cicciosgamino.github.io/master/images/exampleOne.gif)
 
 ```css
---progress-from-bottom: 10%;
---progress-from-left: 50%;
---bk-color: #34495e;
---progress-stroke-color: #3598dc;
---progress-opacity: 1;
---progress-font-family: 'Roboto', sans-serif;
---progress-font-size: 3rem;
---progress-font-color: whitesmoke;
+progress-ring {
+  --progress-from-bottom: 10%;
+  --progress-from-left: 50%;
+  --bk-color: #34495e;
+  --progress-stroke-color: #3598dc;
+  --progress-opacity: 1;
+  --progress-font-family: 'Roboto', sans-serif;
+  --progress-font-size: 3rem;
+  --progress-font-color: whitesmoke;
+}
 ```
 
 ```html
@@ -31,18 +32,20 @@ Simple customizable progress ring 🪐!
 ![Example Two](https://raw.githubusercontent.com/CICCIOSGAMINO/cicciosgamino.github.io/master/images/exampleTwo.gif)
 
 ```css
---progress-from-bottom: 10%;
---progress-from-left: 50%;
---bk-color: transparent;
---footprint-stroke-color: grey;
---footprint-opacity: .1;
---progress-stroke-color: #e9008d;
---progress-stroke-gradient-color: #dc0030ff;
---progress-stroke-linecap: round;
---progress-font-family: 'Jua', sans-serif;
---progress-font-size: 3rem;
---progress-font-color: #dc0030ff;
---progress-font-weight: 600;
+progress-ring {
+  --progress-from-bottom: 10%;
+  --progress-from-left: 50%;
+  --bk-color: transparent;
+  --footprint-stroke-color: grey;
+  --footprint-opacity: .1;
+  --progress-stroke-color: #e9008d;
+  --progress-stroke-gradient-color: #dc0030ff;
+  --progress-stroke-linecap: round;
+  --progress-font-family: 'Jua', sans-serif;
+  --progress-font-size: 3rem;
+  --progress-font-color: #dc0030ff;
+  --progress-font-weight: 600;
+}
 ```
 
 ```html
@@ -54,23 +57,25 @@ Simple customizable progress ring 🪐!
 ![Example Four](https://raw.githubusercontent.com/CICCIOSGAMINO/cicciosgamino.github.io/master/images/exampleThree.gif)
 
 ```css
---progress-from-bottom: 5%;
---progress-from-left: 50%;
+progress-ring {
+  --progress-from-bottom: 5%;
+  --progress-from-left: 50%;
 
---bk-color: transparent;
+  --bk-color: transparent;
 
---progress-stroke-color: purple;
---progress-stroke-gradient-color: #00bc9b;
---progress-stroke-linecap: round;
---progress-opacity: .9;
+  --progress-stroke-color: purple;
+  --progress-stroke-gradient-color: #00bc9b;
+  --progress-stroke-linecap: round;
+  --progress-opacity: .9;
 
---footprint-stroke-color: grey;
---footprint-opacity: .2;
+  --footprint-stroke-color: grey;
+  --footprint-opacity: .2;
 
---progress-font-family: 'Mitr', sans-serif;
---progress-font-size: 3rem;
---progress-font-weight: 700;
---progress-font-color: #232323;
+  --progress-font-family: 'Mitr', sans-serif;
+  --progress-font-size: 3rem;
+  --progress-font-weight: 700;
+  --progress-font-color: #232323;
+}
 ```
 
 ```html
@@ -83,27 +88,29 @@ Simple customizable progress ring 🪐!
 ![Example Four](https://raw.githubusercontent.com/CICCIOSGAMINO/cicciosgamino.github.io/master/images/exampleFour.gif)
 
 ```css
---progress-from-bottom: 10%;
---progress-from-left: 50%;
---title-from-top: 10%;
---title-from-left: 50%;
+progress-ring {
+  --progress-from-bottom: 10%;
+  --progress-from-left: 50%;
+  --title-from-top: 10%;
+  --title-from-left: 50%;
 
---bk-color: transparent;
+  --bk-color: transparent;
 
---progress-stroke-color: OrangeRed ;
---progress-stroke-gradient-color: salmon;
---progress-stroke-linecap: round;
---progress-opacity: .9;
+  --progress-stroke-color: OrangeRed ;
+  --progress-stroke-gradient-color: salmon;
+  --progress-stroke-linecap: round;
+  --progress-opacity: .9;
 
---footprint-stroke-color: grey;
---footprint-opacity: .2;
+  --footprint-stroke-color: grey;
+  --footprint-opacity: .2;
 
---progress-font-family: 'Roboto', sans-serif;
---progress-font-size: 2rem;
---progress-font-weight: 700;
---progress-font-color: salmon;
+  --progress-font-family: 'Roboto', sans-serif;
+  --progress-font-size: 2rem;
+  --progress-font-weight: 700;
+  --progress-font-color: salmon;
 
---title-font-size: 4rem;
+  --title-font-size: 4rem;
+}
 ```
 
 ```html

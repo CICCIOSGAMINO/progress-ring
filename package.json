@@ -1,6 +1,6 @@
 {
   "name": "@cicciosgamino/progress-ring",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple progress ring customElement dev with Lit!",
   "main": "progress-ring.js",
   "type": "module",
